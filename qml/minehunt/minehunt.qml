@@ -47,7 +47,7 @@ Item {
     property int clickx: 0
     property int clicky: 0
 
-    width: smallResolution ? 480 : 800; height: smallResolution ? 272 : 480
+    width: smallResolution ? 480 : 450; height: smallResolution ? 272 : 450
 
     Image { source: "MinehuntCore/pics/background.png"; anchors.fill: parent; fillMode: Image.Tile }
 
