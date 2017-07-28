@@ -48,7 +48,7 @@
 #endif
 #include <QtDeclarative/QDeclarativeContext>
 #include <QtDeclarative/QDeclarativeEngine>
-
+#include <QDesktopWidget>
 
 static bool isSmallResolution;
 
@@ -98,6 +98,7 @@ int main(int argc, char *argv[])
     viewer.engine()->rootContext()->setContextProperty("smallResolution", isSmallResolution);
     viewer.setMainQmlFile(QLatin1String("qml/minehunt/minehunt.qml"));
 //    viewer.show();
+    viewer.setFixedSize(app.desktop()->size());
     viewer.showFullScreen();
     qApp->setOverrideCursor( QCursor( Qt::BlankCursor ) );
 
