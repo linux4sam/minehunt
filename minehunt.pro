@@ -5,7 +5,7 @@ folder_01.target = qml
 resources.source = resources
 DEPLOYMENTFOLDERS = folder_01 resources
 
-configfiles.files = configs/3-minehunt.xml
+configfiles.files = configs/03-minehunt.xml
 configfiles.path = /opt/ApplicationLauncher/applications/xml
 configresources.files = configs/minehunter-game.png
 configresources.path = /opt/ApplicationLauncher/applications/resources
